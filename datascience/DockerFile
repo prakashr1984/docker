@@ -25,6 +25,8 @@ RUN mkdir /root/certs && \
 	cd /home
 	
 COPY jupyter_notebook_config.py /root/.jupyter/
-
+COPY ipython_kernel_config.py /root/.ipython/profile_default/
 EXPOSE 8888
+
+WORKDIR /root/
 CMD [ "/bin/bash" ]

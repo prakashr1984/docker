@@ -22,6 +22,20 @@ Docker image is hosted [here](https://hub.docker.com/r/prakashr1984/datascience/
 
 ### Usage
 
-    nvidia-docker run -p 8888:8888 -it prakashr1984/datascience jupyter notebook
+    nvidia-docker run -p 8888:8888 -it prakashr1984/datascience /bin/bash
+    jupyter notebook
+
+Once the notebook server is up you can access it at [https://192.168.99.100:8888](https://192.168.99.100:8888).
+
+*Note: You can run below comand to get the correct ip of the docker container:*
+
+    docker-machine ip
 
 ---
+
+
+
+
+
+
+
